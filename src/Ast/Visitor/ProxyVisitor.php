@@ -7,7 +7,6 @@ use PhpParser\Node;
 use PhpParser\Node\Stmt\ClassMethod;
 use PhpParser\NodeFinder;
 use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitorAbstract;
 use Swoft\Aop\AopTrait;
 use Swoft\Proxy\Ast\Visitor\Visitor;
 
