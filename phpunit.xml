@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="phpunit.xsd"
+        backupGlobals="false"
+        backupStaticAttributes="false"
+        bootstrap="test/bootstrap.php"
+        colors="false"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        processIsolation="false"
+        stopOnFailure="false">
+    <testsuites>
+        <testsuite name="test">
+            <directory suffix="Test.php">./test/case</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/*</directory>
+        </whitelist>
+    </filter>
+</phpunit>
